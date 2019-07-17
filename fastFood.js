@@ -13,14 +13,14 @@ const restaurant = {
 }
 
 const chickenComboMeal1 = {
-    order: 1,
+    name: "chicken combo meal",
     sandwichType: "chicken",
     fries: "true",
     drinkSize: "small"
 }
 
 const chickenComboMeal2 = {
-    order: 2,
+    name: "grilled chicken combo",
     sandwichType: "grilled chicken",
     fries: "false",
     drinkSize: "medium"
@@ -30,7 +30,8 @@ const chickenComboMeal2 = {
 restaurant.placeOrder(chickenComboMeal1)
 restaurant.placeOrder(chickenComboMeal2)
 console.log(restaurant.orders)
-restaurant.getAllOrders();
+const allOrders = restaurant.getAllOrders();
+console.table(allOrders);
 
 
 
